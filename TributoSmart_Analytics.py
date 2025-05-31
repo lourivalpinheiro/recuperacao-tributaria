@@ -1,7 +1,7 @@
 # Importing necessary libraries
 import streamlit as st 
-from data import df
-from classes import Page, TextElement, Logo
+from classes.data.dataset import df
+from classes.ui import Page, TextElement, Logo
 
 # Home page
 homePage = Page(name="TributoSmart Analytics", icon="📊", pageLayout='wide')
