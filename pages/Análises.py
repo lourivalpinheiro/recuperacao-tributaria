@@ -1,7 +1,7 @@
 # Importing necessary libraries
 import streamlit as st
-from classes.ui.logo import Logo
 from classes.ui.pages import Page
+from classes.ui.logo import Logo
 from classes.ui.textelements import TextElement
 from classes.data.plots import paidTaxesFig, ownedTaxesFig, recoveredCreditFig, selicCorrectionFig, totalRecoveredFig
 
