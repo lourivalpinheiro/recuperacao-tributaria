@@ -1,6 +1,6 @@
 # Importing necessary libraries
 import plotly.express as px
-from data import paidTaxes, ownedTaxes, recoveredCredit, selicCorrection, totalRecovered
+from classes.data.analysis import paidTaxes, ownedTaxes, recoveredCredit, selicCorrection, totalRecovered
 
 # Total paid taxes by month
 paidTaxesFig = px.bar(paidTaxes, x='Mês', y='Tributos Pagos (R$)', color_discrete_sequence=["red"], title='Tributos pagos por mês')
