@@ -7,13 +7,3 @@ class Page:
         self.name = name
         self.icon = icon
         self.pageLayout = pageLayout
-
-class TextElement:
-    def __init__(self, text: str):
-        st.markdown(text)
-    
-class Logo:
-    def __init__(self, imagePath: str):
-        st.logo(imagePath)
-        self.imagePath = imagePath
-    

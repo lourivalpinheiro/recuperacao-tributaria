@@ -2,7 +2,7 @@
 import pandas as pd 
 
 # Criando o dicionário com os dados
-dados = {
+data = {
     "Mês": [
         "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
@@ -29,21 +29,6 @@ dados = {
     ]
 }
 
-# Criando o DataFrame
-df = pd.DataFrame(dados)
+# Creating the dataset
+df = pd.DataFrame(data)
 df.head()
-
-# Total paid taxes by month
-paidTaxes = df[['Mês', 'Tributos Pagos (R$)']]
-
-# Total owned taxes by month
-ownedTaxes = df[['Mês', 'Tributos Devidos (R$)']]
-
-# Recovered credit by month
-recoveredCredit = df[['Mês', 'Créditos Recuperados (R$)']]
-
-# Selic correction by month
-selicCorrection = df[['Mês', 'Correção SELIC (R$)']]
-
-# Total recovered by month
-totalRecovered = df[['Mês', 'Total Recuperado (R$)']]
